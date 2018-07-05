@@ -7,10 +7,10 @@ class CsvLocalizer < Formula
   depends_on :python if MacOS.version <= :snow_leopard
 
   def install
-    bin.install "csv-localizer"
+    bin.install "csv-localizer.command"
   end
   
   test do
-    system "#{bin}/csv-localizer", "-h"
+    system "#{bin}/csv-localizer.command", "-h"
   end
 end
