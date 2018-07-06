@@ -1,16 +1,16 @@
 class CsvLocalizer < Formula
-  desc "Convert CSV file to iOS and Android localizable strings"
-  homepage "https://github.com/rogermolas/csv-localizer"
-  url "https://github.com/rogermolas/csv-localizer/archive/v1.0.0.tar.gz"
-  sha256 "1d4ceef62fe4f60febdcde2b9690aff50c3fe9ac2e3c9e0cb17f80c01456214a"
-  version "1.0.0"
-  depends_on :python if MacOS.version <= :snow_leopard
+    desc "Convert CSV file to iOS and Android localizable strings"
+    homepage "https://github.com/rogermolas/csv-localizer"
+    url "https://github.com/rogermolas/csv-localizer/archive/v1.2.0.tar.gz"
+    sha256 "4e59c40f3404cc5aa5e874342b72a08ac9c2ae1270beb4430318f59ad9b929e1"
+    version "1.2.0"
+    depends_on :python if MacOS.version <= :snow_leopard
+    
+    def install
+        bin.install "csv-localizer"
+    end
 
-  def install
-    bin.install "csv-localizer"
-  end
-  
-  test do
-    system "#{bin}/csv-localizer", "-h"
-  end
+    test do
+        system "#{bin}/csv-localizer", "-h"
+    end
 end
