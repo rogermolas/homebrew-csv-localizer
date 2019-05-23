@@ -1,8 +1,8 @@
 class CsvLocalizer < Formula
   desc "Convert CSV file to iOS and Android localizable strings"
   homepage "https://github.com/rogermolas/csv-localizer"
-  url "https://github.com/rogermolas/csv-localizer/archive/v1.2.1.tar.gz"
-  sha256 "9ed12ed932673521659bee64edb9ff727c845a3a948aac00a3354b5f96a825e8"
+  url "https://github.com/rogermolas/csv-localizer/archive/v1.2.2.tar.gz"
+  sha256 "03e89e1b90b5f55b7399be869b88b39e4da3a556ce6dd89e999af188bca790d2"
 
   depends_on "python@2"
 
